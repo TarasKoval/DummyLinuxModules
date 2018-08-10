@@ -1,8 +1,10 @@
 # insmod /lib/hello.ko 
+```
 [   20.947288] Hello, World!
-
+```
 
 # insmod /lib/hello2.ko 
+```
 [   24.962517] Hello, World!
 [   24.962657] Unhandled fault: page domain fault (0x81b) at 0x00000000
 [   24.962853] pgd = d1e3c000
@@ -47,9 +49,10 @@
 [   24.972367] Code: eb4f20a1 e3a03000 e3a02003 e1a00003 (e5832000) 
 [   24.972697] ---[ end trace a7ff5cd087940d96 ]---
 Segmentation fault
-
+```
 
 # insmod /lib/hello3.ko 
+```
 [   28.180136] Hello, World!
 [   28.180311] do_init_module: 'hello3'->init suspiciously returned 1, it should follow 0/-E convention
 [   28.180311] do_init_module: loading module anyway...
@@ -61,8 +64,10 @@ Segmentation fault
 [   28.181578] [<c03ce574>] (do_init_module) from [<c03b1dc8>] (load_module+0x1c80/0x1fc4)
 [   28.181759] [<c03b1dc8>] (load_module) from [<c03b2258>] (SyS_init_module+0x14c/0x15c)
 [   28.181940] [<c03b2258>] (SyS_init_module) from [<c0307d00>] (ret_fast_syscall+0x0/0x3c)
-
+```
 
 # insmod /lib/hello4.ko 
+```
 [   31.352782] Hello, World!
 insmod: can't insert '/lib/hello4.ko': Operation not permitted
+```
